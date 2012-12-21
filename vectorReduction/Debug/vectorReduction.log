@@ -1,0 +1,50 @@
+﻿Build started 21.12.2012 10:54:15.
+     1>Project "c:\Users\freem_000\documents\visual studio 2010\Projects\vectorReduction\vectorReduction\vectorReduction.vcxproj" on node 2 (build target(s)).
+     1>PrepareForBuild:
+         Creating directory "c:\users\freem_000\documents\visual studio 2010\Projects\vectorReduction\Debug\".
+       InitializeBuildStatus:
+         Creating "Debug\vectorReduction.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       AddCudaCompileDeps:
+         F:\VisualStudio\VC\bin\cl.exe /E /nologo /showIncludes /TP /D__CUDACC__ /DWIN32 /D_DEBUG /D_CONSOLE /D_MBCS /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v5.0\include" /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v5.0\bin" /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v5.0\include" /I. /FIcuda_runtime.h /c "c:\Users\freem_000\documents\visual studio 2010\Projects\vectorReduction\vectorReduction\kernel.cu" 
+       CudaBuild:
+         Compiling CUDA source file kernel.cu...
+         cmd.exe /C "C:\Users\freem_000\AppData\Local\Temp\tmpb2570a3bebe040939aaedcf11c6e53b5.cmd"
+         "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v5.0\bin\nvcc.exe" -gencode=arch=compute_10,code=\"sm_10,compute_10\" --use-local-env --cl-version 2010 -ccbin "F:\VisualStudio\VC\bin"  -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v5.0\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v5.0\include"  -G   --keep-dir "Debug" -maxrregcount=0  --machine 32 --compile  -g   -DWIN32 -D_DEBUG -D_CONSOLE -D_MBCS -Xcompiler "/EHsc /W3 /nologo /Od /Zi /RTC1 /MDd  " -o "Debug\kernel.cu.obj" "c:\Users\freem_000\documents\visual studio 2010\Projects\vectorReduction\vectorReduction\kernel.cu"
+         
+         c:\Users\freem_000\documents\visual studio 2010\Projects\vectorReduction\vectorReduction>"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v5.0\bin\nvcc.exe" -gencode=arch=compute_10,code=\"sm_10,compute_10\" --use-local-env --cl-version 2010 -ccbin "F:\VisualStudio\VC\bin"  -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v5.0\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v5.0\include"  -G   --keep-dir "Debug" -maxrregcount=0  --machine 32 --compile  -g   -DWIN32 -D_DEBUG -D_CONSOLE -D_MBCS -Xcompiler "/EHsc /W3 /nologo /Od /Zi /RTC1 /MDd  " -o "Debug\kernel.cu.obj" "c:\Users\freem_000\documents\visual studio 2010\Projects\vectorReduction\vectorReduction\kernel.cu" 
+         kernel.cu
+         tmpxft_00001428_00000000-2_kernel.cudafe1.gpu
+         tmpxft_00001428_00000000-7_kernel.cudafe2.gpu
+         kernel.cu
+         tmpxft_00001428_00000000-2_kernel.cudafe1.cpp
+         tmpxft_00001428_00000000-12_kernel.ii
+     1>c:/Users/freem_000/documents/visual studio 2010/Projects/vectorReduction/vectorReduction/kernel.cu(37): warning C4244: 'argument' : conversion from 'time_t' to 'unsigned int', possible loss of data
+         Deleting file "tmpxft_00001428_00000000-8_kernel.cpp3.o".
+       ManifestResourceCompile:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /nologo /fo"Debug\vectorReduction.exe.embed.manifest.res" Debug\vectorReduction_manifest.rc 
+       Link:
+         F:\VisualStudio\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"c:\users\freem_000\documents\visual studio 2010\Projects\vectorReduction\Debug\vectorReduction.exe" /INCREMENTAL /NOLOGO /LIBPATH:"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v5.0\lib\Win32" cudart.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\vectorReduction.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"c:\users\freem_000\documents\visual studio 2010\Projects\vectorReduction\Debug\vectorReduction.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"c:\users\freem_000\documents\visual studio 2010\Projects\vectorReduction\Debug\vectorReduction.lib" /MACHINE:X86 Debug\kernel.cu.obj
+         Debug\vectorReduction.exe.embed.manifest.res
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /out:"Debug\vectorReduction.exe.embed.manifest" /manifest Debug\vectorReduction.exe.intermediate.manifest
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /nologo /fo"Debug\vectorReduction.exe.embed.manifest.res" Debug\vectorReduction_manifest.rc 
+       LinkEmbedManifest:
+         F:\VisualStudio\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"c:\users\freem_000\documents\visual studio 2010\Projects\vectorReduction\Debug\vectorReduction.exe" /INCREMENTAL /NOLOGO /LIBPATH:"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v5.0\lib\Win32" cudart.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\vectorReduction.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"c:\users\freem_000\documents\visual studio 2010\Projects\vectorReduction\Debug\vectorReduction.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"c:\users\freem_000\documents\visual studio 2010\Projects\vectorReduction\Debug\vectorReduction.lib" /MACHINE:X86 Debug\kernel.cu.obj
+         Debug\vectorReduction.exe.embed.manifest.res
+         vectorReduction.vcxproj -> c:\users\freem_000\documents\visual studio 2010\Projects\vectorReduction\Debug\vectorReduction.exe
+       PostBuildEvent:
+         echo copy "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v5.0\bin\cudart*.dll" "c:\users\freem_000\documents\visual studio 2010\Projects\vectorReduction\Debug\"
+         copy "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v5.0\bin\cudart*.dll" "c:\users\freem_000\documents\visual studio 2010\Projects\vectorReduction\Debug\"
+         :VCEnd
+         copy "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v5.0\bin\cudart*.dll" "c:\users\freem_000\documents\visual studio 2010\Projects\vectorReduction\Debug\"
+         C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v5.0\bin\cudart32_50_35.dll
+         C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v5.0\bin\cudart64_50_35.dll
+         Скопировано файлов:         2.
+       FinalizeBuildStatus:
+         Deleting file "Debug\vectorReduction.unsuccessfulbuild".
+         Touching "Debug\vectorReduction.lastbuildstate".
+     1>Done Building Project "c:\Users\freem_000\documents\visual studio 2010\Projects\vectorReduction\vectorReduction\vectorReduction.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:06.02
